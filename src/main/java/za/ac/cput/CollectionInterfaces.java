@@ -75,5 +75,31 @@ public class CollectionInterfaces {
         // Checking for the value 'Michael' which should have been removed
         System.out.println("Is the value 'Michael' present? " +
                 officeMap.containsValue("Michael"));
+
+        //Set
+        System.out.println("\n" + "Set Interface" );
+        Set<Integer> set = new HashSet<>();
+
+        // add elements in the set
+        set.add(1);
+        set.add(2);
+        set.add(3);
+        set.add(4);
+        set.add(5);
+        set.add(6);
+        System.out.println("Initial set are: "+ set);
+        set.add(4); //adding an already added object, but duplicates are not allowed
+        System.out.println("Set after adding a duplicate are: "+ set); //confirms that SET does not allow duplicates as the size stays the same
+        set.add(7); // adding a new object that is not a duplicate
+        System.out.println("Set after adding a non-duplicate are: "+ set); // Displaying the Set after adding
+
+        //removing from the set
+        set.remove(3);
+        // Displaying the Set after removing
+        System.out.println("Set after removing are: "+ set);
+
+        //Checking if an item can be found in the Set
+        System.out.println("Is the object '1' present? " +set.contains(1));
+
     }
 }
