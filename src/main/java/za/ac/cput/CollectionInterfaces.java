@@ -101,5 +101,29 @@ public class CollectionInterfaces {
         //Checking if an item can be found in the Set
         System.out.println("Is the object '1' present? " +set.contains(1));
 
+        //List
+        System.out.println("\n" + "List Interface" );
+        List<String> carList = new ArrayList<>();
+        //add elements
+        carList.add("BMW");
+        carList.add("Audi");
+        carList.add("Toyota");
+        carList.add("Kia");
+        System.out.println("Initial Arraylist: " + carList);
+
+        //add new elements
+        carList.add("VW");
+        System.out.println("After adding a new element: " + carList);
+
+        //remove elements
+        carList.remove(0);
+        System.out.println("After removing: " + carList);
+
+        //Checking if an item can be found
+        System.out.println("Is Kia present? " +
+                carList.contains( "Kia" ));
+
+
+
     }
 }

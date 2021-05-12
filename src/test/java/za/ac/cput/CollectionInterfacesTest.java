@@ -149,4 +149,44 @@ class CollectionInterfacesTest {
         assertTrue(set.contains(3));
     }
 
+
+
+    // Testing List Interface
+    //Testing to add item
+    @Test
+    void listAdd() {
+        List<String> carList = new ArrayList<>();
+        carList.add("BMW");
+        carList.add("Audi");
+        carList.add("Toyota");
+        carList.add("Kia");
+        assertEquals(4, carList.size());
+        carList.add("VW");
+        assertEquals(5, carList.size());
+    }
+
+    //Testing to remove item
+    @Test
+    void listRemove() {
+        List<String> carList = new ArrayList<>();
+        carList.add("BMW");
+        carList.add("Audi");
+        carList.add("Toyota");
+        carList.add("Kia");
+        carList.remove("Kia");
+        assertEquals(3, carList.size());
+    }
+
+    //Testing if an item can be found in the List
+    @Test
+    void listFind() {
+        List<String> carList = new ArrayList<>();
+        carList.add("BMW");
+        carList.add("Audi");
+        carList.add("Toyota");
+        carList.add("Kia");
+        assertTrue(carList.contains("Audi"));
+
+    }
+
 }
