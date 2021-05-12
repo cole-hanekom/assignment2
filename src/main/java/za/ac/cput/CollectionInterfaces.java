@@ -42,6 +42,38 @@ public class CollectionInterfaces {
         System.out.println("Is Chelsea present in the list: "
                 + result);
 
+        //Map
+        System.out.println("\n" + "Map Interface"  );
+        Map<Integer, String> officeMap = new HashMap<>();
 
+        // Add elements
+        officeMap.put(1,"Jim");
+        officeMap.put(2,"Dwight");
+        officeMap.put(3,"Pam");
+        officeMap.put(4,"Michael");
+
+        // Displaying the HashMap
+        System.out.println("Initial Mappings are: " + officeMap);
+
+        //adding a new key and value to the HashMap
+        officeMap.put(5,"Kevin");
+
+        // Displaying the HashMap after adding
+        System.out.println("Mappings after adding are: " + officeMap);
+
+        //removing from the the HashMap
+        officeMap.remove(4);
+
+        // Displaying the HashMap after removing
+        System.out.println("Mappings after removing are: " + officeMap);
+
+        //Checking if an item can be found in the HashMap
+        // Checking for the key_element '2'
+        System.out.println("Is the key '2' present? " +
+                officeMap.containsKey(2));
+
+        // Checking for the value 'Michael' which should have been removed
+        System.out.println("Is the value 'Michael' present? " +
+                officeMap.containsValue("Michael"));
     }
 }
