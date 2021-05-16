@@ -72,7 +72,7 @@ public class CollectionInterfaces {
         System.out.println("Is the key '2' present? " +
                 officeMap.containsKey(2));
 
-        // Checking for the value 'Michael' which should have been removed
+        // Checking for the value 'Michael' which should have been removed from the Map
         System.out.println("Is the value 'Michael' present? " +
                 officeMap.containsValue("Michael"));
 
@@ -122,8 +122,5 @@ public class CollectionInterfaces {
         //Checking if an item can be found
         System.out.println("Is Kia present? " +
                 carList.contains( "Kia" ));
-
-
-
     }
 }

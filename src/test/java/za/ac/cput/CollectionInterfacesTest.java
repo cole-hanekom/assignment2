@@ -150,7 +150,6 @@ class CollectionInterfacesTest {
     }
 
 
-
     // Testing List Interface
     //Testing to add item
     @Test
